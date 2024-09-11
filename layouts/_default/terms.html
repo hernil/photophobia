@@ -5,7 +5,7 @@
     <section>
       {{ range $key, $value := .Data.Terms }}
         <h2>
-          <a href="{{ "/" | relLangURL }}{{ $.Data.Plural | urlize }}/{{ $key | urlize }}">
+          <a href="{{ "/" | relLangURL }}{{ $.Data.Plural | urlize }}/{{ $key | urlize }}/">
             {{ $.Data.Singular | humanize }}: {{ $key }}
           </a>
         </h2>

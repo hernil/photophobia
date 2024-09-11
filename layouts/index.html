@@ -11,7 +11,7 @@
         <h3>{{ $.Param "recent_copy" | default (i18n "recentTitle" .) }}</h3>
       {{ end }}
 
-      {{ $n_posts := $.Param "recent_posts_number" | default 10 }}
+      {{ $n_posts := $.Param "recent_posts_number" | default 100 }}
 
       <section>
         {{ range (first $n_posts $section) }}

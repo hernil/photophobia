@@ -34,7 +34,7 @@
   {{- template "_internal/twitter_cards.html" . -}}
 
   {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
-    {{ template "_internal/google_analytics_async.html" . }}
+    <script defer src="https://umami.yvn.no/script.js" data-website-id="fd0a7e29-5bd3-4d8e-82fe-909e3691e3d3"></script>
   {{ end }}
 
   {{ block "head" . }}{{ partial "head-additions.html" . }}{{ end }}
